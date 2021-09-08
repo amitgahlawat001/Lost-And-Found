@@ -14,6 +14,8 @@ export const SignUp = () => {
     const [lname, setLname] = useState("");
     const [email, setEmail] = useState("");
     const [flipped, set] = useState(false)
+    const [showLogin,setShowLogin]=useState(true)
+    const [showSignup,setShowSignup]=useState(false)
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `transform translate(-50%,-50%) perspective(600px) rotateY(${flipped ? 180 : 0}deg)`,
@@ -22,8 +24,8 @@ export const SignUp = () => {
     return (
         <>
             <div className="sign-up">
-                <a.div className="login-box"  style={{ opacity: opacity.to(o => 1 - o), transform }} >
-                    <form action="">
+                <a.div className="login-box"  style={{ opacity: opacity.to(o => 1 - o), transform }} >{
+                    showLogin?<form action="">
                         <div className='login-box'>
                             Lost & Found
                             <i class='fab fa-typo3' />
@@ -36,16 +38,20 @@ export const SignUp = () => {
                                 <Link to='/' className="sign-up-link">
                                     Forget password
                                 </Link>
-                                <Link className="sign-up-link" onClick={() => set(state => !state)}>
+                                <Link className="sign-up-link" onClick={() => {set(state => !state)
+                                 setShowLogin(false)
+                                 setShowSignup(true)
+                                 }}>
                                     Register here
                                 </Link>
                             </div>
                         </div>
                         
-                    </form>
+                    </form>:null }
                 </a.div>
-                <a.div className='sing-up-box'  style={{opacity,transform,rotateY: '180deg',}}> 
-                    <form action="">
+                <a.div className='sing-up-box'  style={{opacity,transform,rotateY: '180deg',}}>{
+
+                    showSignup?<form action="">
                         <div className='sign-up-box'>
                             Lost & Found
                             <i class='fab fa-typo3' />
@@ -59,9 +65,13 @@ export const SignUp = () => {
                             <input type="text" name='username' id='username' autoComplete='false' value={username} onChange={(e) => setUsername(e.target.value)} style={{width:'100%'}}/>
                             <p className='sign-up-text'>Password</p>
                             <input type="password" name='password' id='password' autoComplete='false' value={password} onChange={(e) => setPassword(e.target.value)} style={{width:'100%'}}/>
-                            <Button buttonStyle='btn--outline'  onClick={() => set(state => !state)}>Sign Up</Button>
+                            <Button buttonStyle='btn--outline'  onClick={() => {
+                                set(state => !state)
+                                setShowLogin(true)
+                                setShowSignup(false)}} >Sign Up</Button>
+                            
                         </div>
-                    </form>
+                    </form>:null }
                 </a.div>
             </div>
         </>
