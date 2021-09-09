@@ -35,7 +35,7 @@ export const SignUp = () => {
                             <input type="password" name='password' id='password' autoComplete='false' value={password} onChange={(e) => setPassword(e.target.value)} style={{width:'100%'}}/>
                             <Button buttonStyle='btn--outline'>Log in</Button>
                             <div className="sign-up-item">
-                                <Link to='/' className="sign-up-link">
+                                <Link to='./pages/ForgetPass.js' className="sign-up-link">
                                     Forget password
                                 </Link>
                                 <Link className="sign-up-link" onClick={() => {set(state => !state)
