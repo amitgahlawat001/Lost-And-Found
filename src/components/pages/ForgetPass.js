@@ -4,7 +4,7 @@ import '../../App.css'
 function ForgetPass() {
     return (
         <div className='passreset'>
-            <hi>welcome</hi>
+            <h1>welcome</h1>
         </div>
     )
 }

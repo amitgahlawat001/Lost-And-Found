@@ -7,7 +7,10 @@ function Home() {
     return(
     <>
         <Section/>
+        <div className="card-section" style={{backgroundColor:"white"}}>
         <Cards/>
+        </div>
+        
     </>
     );
 }

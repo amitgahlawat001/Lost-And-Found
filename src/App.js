@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Footer from './components/Footer';
 import SignUpPage from './components/SignUp'
 import ForgetPass from './components/pages/ForgetPass';
+import Services from './components/pages/Services';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/SignUp' component={SignUpPage} />
           <Route path='/pages/ForgetPass' component={ForgetPass} />
+          <Route path='/pages/Services' component={Services} />
         </switch>
         <Footer />
       </Router>
