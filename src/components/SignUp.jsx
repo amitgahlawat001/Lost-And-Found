@@ -34,7 +34,7 @@ export const SignUp = () => {
                             <input type="text" name='username' id='username' autoComplete='false' value={username} onChange={(e) => setUsername(e.target.value)} style={{ width: '100%' }} />
                             <p className='sign-up-text'>Password</p>
                             <input type="password" name='password' id='password' autoComplete='false' value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '100%' }} />
-                            <Button buttonStyle='btn--outline'>Log in</Button>
+                            <Button buttonStyle='btn--outline' id='login-btn'>Log in</Button>
                             <div className="sign-up-item">
                                 <Link to='./pages/ForgetPass' className="sign-up-link">
                                     Forget password
@@ -67,7 +67,7 @@ export const SignUp = () => {
                             <input type="text" name='username' id='username' autoComplete='false' value={username} onChange={(e) => setUsername(e.target.value)} style={{ width: '100%' }} />
                             <p className='sign-up-text'>Password</p>
                             <input type="password" name='password' id='password' autoComplete='false' value={password} onChange={(e) => setPassword(e.target.value)} style={{ width: '100%' }} />
-                            <Button buttonStyle='btn--outline' onClick={() => {
+                            <Button buttonStyle='btn--outline' id='register-btn' onClick={() => {
                                 set(state => !state)
                                 setShowLogin(true)
                                 setShowSignup(false)

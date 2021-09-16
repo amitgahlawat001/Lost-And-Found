@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import SignUpPage from './components/SignUp'
 import ForgetPass from './components/pages/ForgetPass';
 import Services from './components/pages/Services';
+import Contact from './components/pages/Contact'
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path='/SignUp' component={SignUpPage} />
           <Route path='/pages/ForgetPass' component={ForgetPass} />
           <Route path='/pages/Services' component={Services} />
+          <Route path='/pages/Contact' component={Contact} />
         </switch>
         <Footer />
       </Router>

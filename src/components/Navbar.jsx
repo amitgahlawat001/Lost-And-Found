@@ -4,6 +4,7 @@ import { Button } from './Button';
 import './Navbar.css'
 
 
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button,setButton] =  useState(true);
@@ -48,7 +49,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-link' onClick={closeMobileMenu}>
+                            <Link to='../pages/Contact' className='nav-link' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
                         </li> 

@@ -6,7 +6,6 @@
 }
 
 .home,
-.products,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -49,10 +48,7 @@
   font-size: 50px;
 }
 
-/* .search_icon{
-  display: flex;
-  justify-content: flex-end;
-}*/
+
 .search-box{
   width: fit-content;
   height: fit-content;

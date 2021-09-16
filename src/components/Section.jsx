@@ -13,7 +13,7 @@ function sectionSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-        >
+        id='lost-btn'>
           Lost Something
         </Button>
         <Button
@@ -21,7 +21,7 @@ function sectionSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
           onClick={console.log('hey')}
-        >
+        id='found-btn'>
             Found Something
         </Button>
       </div>
