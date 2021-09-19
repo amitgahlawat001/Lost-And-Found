@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .content p{
@@ -64,6 +65,23 @@
 }
 
 .message-form{
-   
-
+    height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+    background: white;
+}
+/* input[type='textarea'],
+input[type='text']{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+    } */
+.submit-btn{
+    border: 2px solid black;
+    color: turquoise;
 }

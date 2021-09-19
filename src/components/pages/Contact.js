@@ -40,11 +40,11 @@ function Contact() {
                     </div>
                 </div>
                 <div className='message-form'>
-                    <h2>Send message</h2>
+                    <h1 style={{fontSize: '30px', color: 'black'}}>Send message</h1>
                     <input type="text" name='username' id='username' autoComplete='false' value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Enter your name' />
                     <input type="text" name='email' id='email' autoComplete='false' value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Enter Email address' />
                     <input type="textarea" name='message' id='message' autoComplete='false' value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Type message...' />
-                    <Button className='submit-btn' id='submit-btn'>Submit</Button>
+                    <Button style={{border: 'black', color: 'cadetblue'}}>Submit</Button>
                 </div>
             </div>
         </div>
